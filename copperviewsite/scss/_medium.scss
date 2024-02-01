@@ -1,0 +1,9 @@
+//footer
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    .barFoot{
+        grid-column: 1 / span 2;
+    }
+}//end footer

@@ -1,0 +1,53 @@
+//nav button 
+nav button{
+    display: none;
+}
+//nav
+nav{    
+    background-color: $black;
+    ul{
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+    }//end ul
+    ul li a{
+        display: block;
+        padding: 0.9rem 1.2rem;
+        text-decoration: none;
+        color: $white;
+        transition: background 0.2s ease;
+    }//end a
+    ul li a:hover{
+        background-color: $peach;
+    }//end hover
+    #primaryNav li.parent > a:after {
+        content: "\25BC";
+        font-size: .65rem;
+        float: left;
+        padding: 0.25rem 0.3rem 0 0;
+    }//end triangle
+    ul li ul{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 10rem;
+        position: absolute;
+        left: -999rem;
+        z-index: 99;
+    }//end child menu items
+    ul li:hover ul{
+        left: auto;
+        margin-left: 0;
+    }
+    li.active a{
+        background-color: lighten($black, 10%) ;
+    }
+}//end nav
+
+//footer
+footer{ 
+    grid-template-columns: 1fr 1fr 1fr;
+    .barFoot{
+        grid-column: 1 / span 3;
+    }
+}//end footer
