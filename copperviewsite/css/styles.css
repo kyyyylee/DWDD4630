@@ -342,12 +342,24 @@ header {
 header h2 {
   padding-left: 1rem;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 200;
+}
+header #phone {
+  display: block;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+header #phone a {
+  color: #67151B;
+  text-decoration: none;
+}
+header #phone a:hover {
+  color: #120405;
 }
 
 nav {
   color: #FDFBFF;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 main {
@@ -362,7 +374,7 @@ main .hero img {
   height: auto;
 }
 main h1 {
-  font-weight: 300;
+  font-weight: 200;
   padding: 0 2vw;
 }
 main p {
@@ -375,7 +387,7 @@ footer {
   padding: 0.8rem 2vw;
 }
 footer p {
-  font-weight: 300;
+  font-weight: 200;
   padding-right: 1rem;
 }
 footer a {
@@ -392,7 +404,7 @@ footer i {
 footer .barFoot {
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 0.8rem;
 }
 
