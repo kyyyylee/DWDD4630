@@ -36,18 +36,18 @@ header {
     font-size: 24px;
     font-weight: 200;
   } //end h2
-  #phone{
+  #phone {
     display: block;
     padding-left: 1rem;
     padding-top: 0.3rem;
-    a{
-        color: $red;
-        text-decoration: none;
-    }//end a
-    a:hover{
-        color:darken($red, 20%);
-    }//end hover
-}//end phone
+    a {
+      color: $red;
+      text-decoration: none;
+    } //end a
+    a:hover {
+      color: darken($red, 20%);
+    } //end hover
+  } //end phone
 } //end header
 
 //nav
@@ -65,13 +65,13 @@ main {
     img {
       width: 100%;
       height: auto;
-    }//end hero img
-  }//end hero
-  h1{
+    } //end hero img
+  } //end hero
+  h1 {
     font-weight: 200;
     padding: 0 2vw;
   }
-  p{
+  p {
     padding: 0.8rem 2vw;
   }
 }
@@ -91,11 +91,14 @@ footer {
   div {
     padding: 0.8rem 0;
   } //end div
-  i {
-    color: $beige;
-    font-size: 1.4rem;
-    padding: 1rem 0.4rem;
-  } //end i
+  img {
+    height: 30px;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  img:hover {
+    opacity: 0.7;
+  }
   .barFoot {
     text-align: center;
     font-size: 1.2rem;

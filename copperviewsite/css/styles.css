@@ -396,10 +396,13 @@ footer a {
 footer div {
   padding: 0.8rem 0;
 }
-footer i {
-  color: #E3D3C4;
-  font-size: 1.4rem;
-  padding: 1rem 0.4rem;
+footer img {
+  height: 30px;
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+footer img:hover {
+  opacity: 0.7;
 }
 footer .barFoot {
   text-align: center;
