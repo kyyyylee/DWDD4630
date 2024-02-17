@@ -324,6 +324,7 @@ html {
   font-size: 16px;
 }
 
+/* ------------------ MAX WIDTH ------------------ */
 header,
 nav,
 main,
@@ -332,6 +333,7 @@ footer {
   margin: auto;
 }
 
+/* ------------------ HEADER ------------------ */
 header {
   display: flex;
   align-items: center;
@@ -357,13 +359,18 @@ header #phone a:hover {
   color: #120405;
 }
 
+/* ------------------ NAV ------------------ */
 nav {
   color: #FDFBFF;
   font-weight: 200;
 }
 
-main {
-  margin-bottom: 1rem;
+/* ------------------ HERO IMAGE ------------------ */
+main h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0 0.5rem 0;
 }
 main .hero {
   width: 100%;
@@ -373,12 +380,114 @@ main .hero img {
   width: 100%;
   height: auto;
 }
-main h1 {
+main h1,
+main h2 {
   font-weight: 200;
-  padding: 0 2vw;
 }
 main p {
-  padding: 0.8rem 2vw;
+  padding: 0.8rem 0;
+}
+
+/* ------------------ ROW AND COLUMN LAYOUT ------------------ */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  padding: 0 8px;
+}
+
+.small-0 {
+  flex-basis: 0%;
+}
+
+.small-1 {
+  flex-basis: 8.3333333333%;
+}
+
+.small-2 {
+  flex-basis: 16.6666666667%;
+}
+
+.small-3 {
+  flex-basis: 25%;
+}
+
+.small-4 {
+  flex-basis: 33.3333333333%;
+}
+
+.small-5 {
+  flex-basis: 41.6666666667%;
+}
+
+.small-6 {
+  flex-basis: 50%;
+}
+
+.small-7 {
+  flex-basis: 58.3333333333%;
+}
+
+.small-8 {
+  flex-basis: 66.6666666667%;
+}
+
+.small-9 {
+  flex-basis: 75%;
+}
+
+.small-10 {
+  flex-basis: 83.3333333333%;
+}
+
+.small-11 {
+  flex-basis: 91.6666666667%;
+}
+
+.small-12 {
+  flex-basis: 100%;
+}
+
+/* ------------------ CARD ONE ------------------ */
+.card1 figure {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card1 figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card1 figure figcaption {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #161A1E;
+  color: #FDFBFF;
+}
+
+.seemore {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto 2rem auto;
+  width: 260px;
+  text-align: center;
+  padding: 0.9rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FDFBFF;
+  font-weight: 400;
+  background-color: #67151B;
+  transition: background-color 0.5s ease;
+}
+.seemore:hover {
+  background-color: #120405;
 }
 
 footer {
@@ -507,6 +616,45 @@ footer .barFoot {
   }
 } /* End Mobile Styles */
 @media only screen and (min-width: 560px) {
+  .medium-0 {
+    flex-basis: 0%;
+  }
+  .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+  .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+  .medium-3 {
+    flex-basis: 25%;
+  }
+  .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+  .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+  .medium-6 {
+    flex-basis: 50%;
+  }
+  .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+  .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+  .medium-9 {
+    flex-basis: 75%;
+  }
+  .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+  .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+  .medium-12 {
+    flex-basis: 100%;
+  }
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -517,6 +665,49 @@ footer .barFoot {
   }
 } /* end of media query */
 @media only screen and (min-width: 1028px) {
+  .card1, .row, footer {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  .large-0 {
+    flex-basis: 0%;
+  }
+  .large-1 {
+    flex-basis: 8.3333333333%;
+  }
+  .large-2 {
+    flex-basis: 16.6666666667%;
+  }
+  .large-3 {
+    flex-basis: 25%;
+  }
+  .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+  .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+  .large-6 {
+    flex-basis: 50%;
+  }
+  .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+  .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+  .large-9 {
+    flex-basis: 75%;
+  }
+  .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+  .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+  .large-12 {
+    flex-basis: 100%;
+  }
   nav button {
     display: none;
   }
@@ -559,6 +750,21 @@ footer .barFoot {
   }
   nav li.active a {
     background-color: #2c343b;
+  }
+  .card1 figure {
+    position: relative;
+  }
+  .card1 figure:hover figcaption {
+    opacity: 1;
+  }
+  .card1 figure figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    padding: 3rem 0 0.5rem 0;
+    transition: opacity 0.6s ease;
   }
   footer {
     grid-template-columns: 1fr 1fr 1fr;

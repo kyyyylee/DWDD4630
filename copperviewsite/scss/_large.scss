@@ -1,7 +1,24 @@
+//max width 
+.card1, .row, footer {
+    max-width: 80rem; //1288px
+    margin: 0 auto;
+
+}
+
+//for loop 
+@for $i from 0 through 12 {
+    $w: calc(($i / 12) * 100%);
+  
+    .large-#{$i} {
+      flex-basis: $w;
+    }
+  }//end for loop
+
 //nav button 
 nav button{
     display: none;
 }
+
 //nav
 nav{    
     background-color: $black;
@@ -43,6 +60,22 @@ nav{
         background-color: lighten($black, 10%) ;
     }
 }//end nav
+
+.card1 figure {
+    position: relative;
+    &:hover figcaption {
+        opacity: 1;
+    }
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        opacity: 0;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+        padding: 3rem 0 .5rem 0;
+        transition: opacity .6s ease;
+    }
+}
 
 //footer
 footer{ 

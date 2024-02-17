@@ -15,7 +15,7 @@ html {
   font-size: 16px;
 }
 
-//max width
+/* ------------------ MAX WIDTH ------------------ */
 header,
 nav,
 main,
@@ -24,7 +24,7 @@ footer {
   margin: auto;
 }
 
-//header
+/* ------------------ HEADER ------------------ */
 header {
   display: flex;
   align-items: center;
@@ -50,15 +50,20 @@ header {
   } //end phone
 } //end header
 
-//nav
+/* ------------------ NAV ------------------ */
 nav {
   color: $white;
   font-weight: 200;
 } //end nav
 
-//main
+/* ------------------ HERO IMAGE ------------------ */
 main {
-  margin-bottom: 1rem;
+  h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0 .5rem 0;
+  }
   .hero {
     width: 100%;
     margin: 0;
@@ -67,15 +72,74 @@ main {
       height: auto;
     } //end hero img
   } //end hero
-  h1 {
+  h1,
+  h2 {
     font-weight: 200;
-    padding: 0 2vw;
   }
   p {
-    padding: 0.8rem 2vw;
+    padding: 0.8rem 0;
   }
 }
 
+/* ------------------ ROW AND COLUMN LAYOUT ------------------ */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} //end row
+
+.column {
+  padding: 0 8px;
+} //end column
+
+@for $i from 0 through 12 {
+  $w: calc(($i / 12) * 100%);
+  .small-#{$i} {
+    flex-basis: $w;
+  }
+} //end for loop
+
+/* ------------------ CARD ONE ------------------ */
+.card1 {
+  figure {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 6px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    } //end img
+    figcaption {
+      padding: 0.5rem;
+      text-align: center;
+      background-color: $black;
+      color: $white;
+    }
+  } //end figure
+} //end card1
+
+.seemore {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto 2rem auto;
+  width: 260px;
+  text-align: center;
+  padding: .9rem;
+  border-radius: 25px;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $white;
+  font-weight: 400;
+  background-color: $red;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: darken($red, 20%);
+  }
+
+}
 //footer
 footer {
   background-color: $black;
